@@ -1,0 +1,17 @@
+.container {
+    display: grid;
+    width: 600px;
+    height: 600px;
+    margin: auto;
+}
+
+.cell {
+    border: solid black 1px;
+}
+
+
+
+
+
+
+
