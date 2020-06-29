@@ -1,8 +1,8 @@
 const container = document.querySelector('.container');
+const cell = document.querySelector('cell')
 
-let gridSize = 16;
 
-function makeGrid() {
+function makeGrid(gridSize) {
     container.style.gridTemplateColumns =`repeat(${gridSize}, 1fr)`;
     container.style.gridTemplateRows = `repeat(${gridSize}, 1fr)`;
 
@@ -18,4 +18,16 @@ function makeGrid() {
     }
 }
 
-window.onload = makeGrid();
+makeGrid(16);
+
+function resetGrid() {
+    container.innerHTML = '';
+    makeGrid(16);
+}
+
+function resizeGrid() {
+    container.innerHTML = '';
+    let newGridSize = prompt("What size would you like to set the grid to?");
+    makeGrid(newGridSize);
+}
+

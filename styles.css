@@ -1,13 +1,37 @@
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(168, 167, 165);
+    text-align: center;
+}
+
 .container {
     display: grid;
     width: 600px;
     height: 600px;
     margin: auto;
+    border: solid black 2px;
+    border-radius: 4px;
+    margin-bottom: 30px;
 }
 
 .cell {
-    border: solid black 1px;
+   border: solid black 1px;
 }
+
+.buttons {
+    display: block;
+    text-align: center;
+}
+
+button {
+    background-color: rgb(207, 203, 195);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-color: rgb(182, 178, 171);
+    border-radius: 6px;
+    padding: 5px;
+    margin-right: 8px;
+}
+
 
 
 
